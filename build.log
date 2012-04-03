@@ -1,0 +1,262 @@
+Logfile initialized
+[INFO] logfile = D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build.log
+[DEBUG] C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\builder.py simulator daysnapper D:\Program Files\Android\android-sdk D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper coop.tiny.daysnapper 19 HVGA
+[INFO] Building daysnapper for Android ... one moment
+[INFO] Titanium SDK version: 1.8.2 (02/23/12 17:46 59b3a90)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 2 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.031000 seconds on emulator to get ready
+[DEBUG] coop.tiny.daysnapper installed? False
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying project resources..
+[INFO] Detected tiapp.xml change (or assets deleted), forcing full re-build...
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\appicon.png => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\appicon.png
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\default.png => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\default.png
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\app.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\app.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\KS_nav_ui.png => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\KS_nav_ui.png
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\KS_nav_views.png => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\KS_nav_views.png
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\lib\taffy.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\lib\taffy.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\Thumbs.db => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\Thumbs.db
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\ApplicationWindow.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\common\DetailView.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\common\DetailView.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\common\MasterView.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\common\MasterView.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\Dashboard.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\Dashboard.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\FirstView.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\FirstView.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\handheld\android\ApplicationWindow.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\handheld\android\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\handheld\ios\ApplicationWindow.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\handheld\ios\ApplicationWindow.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\LoginWindow.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\LoginWindow.js
+[TRACE] COPYING CREATED FILE: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\ui\tablet\ApplicationWindow.js => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\ui\tablet\ApplicationWindow.js
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] app stylesheet => D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\gen\coop\tiny\daysnapper\ApplicationStylesheet.java
+[DEBUG] copying app icon: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-land-hdpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-land-hdpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-long-land-hdpi\background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-land-ldpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-land-ldpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-long-land-ldpi\background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-port-hdpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-port-hdpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-long-port-hdpi\background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-port-ldpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-long-port-ldpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-long-port-ldpi\background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-land-hdpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-land-hdpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-notlong-land-hdpi\background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-land-ldpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-land-ldpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-notlong-land-ldpi\background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-land-mdpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-land-mdpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-notlong-land-mdpi\background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-port-hdpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-port-hdpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-notlong-port-hdpi\background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-port-ldpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-port-ldpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-notlong-port-ldpi\background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-port-mdpi\default.png
+[DEBUG] copying D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\Resources\android\images\res-notlong-port-mdpi\default.png splash screen to D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\res\drawable-notlong-port-mdpi\background.png
+[DEBUG] found splash screen at D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\assets\Resources\default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\gen\coop\tiny\daysnapper\ApplicationStylesheet.java to javac build list
+[DEBUG] adding D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\gen\coop\tiny\daysnapper\DaysnapperActivity.java to javac build list
+[DEBUG] adding D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\gen\coop\tiny\daysnapper\DaysnapperAppInfo.java to javac build list
+[DEBUG] adding D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\gen\coop\tiny\daysnapper\DaysnapperApplication.java to javac build list
+[DEBUG] adding D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\gen\coop\tiny\daysnapper\R.java to javac build list
+[DEBUG] Building Java Sources: "D:\\Users\\Matt\\Dropbox\\Titanium Workspace\\daysnapper\\build\\android\\gen\\coop\\tiny\\daysnapper\\ApplicationStylesheet.java" "D:\\Users\\Matt\\Dropbox\\Titanium Workspace\\daysnapper\\build\\android\\gen\\coop\\tiny\\daysnapper\\DaysnapperActivity.java" "D:\\Users\\Matt\\Dropbox\\Titanium Workspace\\daysnapper\\build\\android\\gen\\coop\\tiny\\daysnapper\\DaysnapperAppInfo.java" "D:\\Users\\Matt\\Dropbox\\Titanium Workspace\\daysnapper\\build\\android\\gen\\coop\\tiny\\daysnapper\\DaysnapperApplication.java" "D:\\Users\\Matt\\Dropbox\\Titanium Workspace\\daysnapper\\build\\android\\gen\\coop\\tiny\\daysnapper\\R.java"
+[INFO] Waiting for SDCard to become available..
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build\android\bin\app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/lib/taffy.js
+[DEBUG] from resource zip => assets/Resources/ui/common/DetailView.js
+[DEBUG] from resource zip => assets/Resources/ui/common/MasterView.js
+[DEBUG] from resource zip => assets/Resources/ui/handheld/android/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/handheld/ios/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/tablet/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/ApplicationWindow.js
+[DEBUG] from resource zip => assets/Resources/ui/Dashboard.js
+[DEBUG] from resource zip => assets/Resources/ui/FirstView.js
+[DEBUG] from resource zip => assets/Resources/ui/LoginWindow.js
+[DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
+[DEBUG] from resource zip => assets/Resources/KS_nav_views.png
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/drawable/close.png
+[DEBUG] from resource zip => res/drawable/facebook_login.png
+[DEBUG] from resource zip => res/drawable/facebook_login_down.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide_down.png
+[DEBUG] from resource zip => res/drawable/facebook_logout.png
+[DEBUG] from resource zip => res/drawable/facebook_logout_down.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-hdpi/close.png
+[DEBUG] from resource zip => res/drawable-ldpi/close.png
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseFieldOperation.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/GetCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/SendCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseDeleteOperation.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseGeoPoint.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseBroadcastReceiver.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/SaveCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseCommand.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseJSONCacheItem.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/CountCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/FindCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/LogInCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/DeleteCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/StandardPushCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/SignUpCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/Parse.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseTestUtils.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseUser.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/PushService.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/RequestPasswordResetCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseACL.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/GetDataCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParsePointer.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/RefreshCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseQuery.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseObject.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseFile.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParseIncrementOperation.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/ParsePush.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/PushCallback.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/BackgroundTask.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/DecoderException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/EncoderException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/Encoder.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/Decoder.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/BinaryDecoder.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/StringEncoder.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/CharEncoding.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/StringDecoder.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/BinaryEncoder.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/BaseNCodecInputStream.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Base32InputStream.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/BaseNCodec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Base64.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Hex.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Base64OutputStream.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Base64InputStream.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/BinaryCodec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Base32.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/BaseNCodecOutputStream.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/Base32OutputStream.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/binary/StringUtils.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/digest/DigestUtils.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/ColognePhonetic.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/DoubleMetaphone.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/AbstractCaverphone.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/Caverphone.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/RefinedSoundex.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/SoundexUtils.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/Caverphone1.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/Metaphone.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/Soundex.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/language/Caverphone2.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/net/BCodec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/net/URLCodec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/net/QCodec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/net/RFC1522Codec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/net/Utils.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/codec/net/QuotedPrintableCodec.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/HttpMultipart.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/MinimalField.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/HttpMultipartMode.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/Header.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/MultipartEntity.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/MIME.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/FormBodyPart.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/InputStreamBody.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/ByteArrayBody.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/AbstractContentBody.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/StringBody.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/FileBody.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/ContentDescriptor.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/entity/mime/content/ContentBody.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/gdata/UnicodeEscaper.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/gdata/Preconditions.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/gdata/Escaper.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/gdata/PercentEscaper.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/os/ParseAsyncTask.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/AbstractOAuthConsumer.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/OAuthProviderListener.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/OAuth.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/OAuthProvider.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/OAuthConsumer.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/AbstractOAuthProvider.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/basic/HttpURLConnectionRequestAdapter.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/basic/UrlStringRequestAdapter.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/basic/HttpURLConnectionResponseAdapter.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/basic/DefaultOAuthConsumer.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/basic/DefaultOAuthProvider.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/commonshttp/HttpResponseAdapter.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/commonshttp/CommonsHttpOAuthConsumer.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/commonshttp/HttpRequestAdapter.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/commonshttp/CommonsHttpOAuthProvider.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/exception/OAuthNotAuthorizedException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/exception/OAuthMessageSignerException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/exception/OAuthExpectationFailedException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/exception/OAuthCommunicationException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/exception/OAuthException.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/http/HttpRequest.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/http/HttpResponse.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/http/HttpParameters.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/QueryStringSigningStrategy.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/SignatureBaseString.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/PlainTextMessageSigner.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/AuthorizationHeaderSigningStrategy.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/OAuthMessageSigner.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/HmacSha1MessageSigner.java
+[DEBUG] from JAR D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\lib\parse-0.4.14mod.jar => com/parse/signpost/signature/SigningStrategy.java
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\modules\titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\modules\titanium-facebook.jar => ti/modules/titanium/facebook/LICENSE
+[DEBUG] installing native lib: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\libs\armeabi\libcom.forge42.parseapi.so
+[DEBUG] installing native lib: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.forge42.parseapi\2.0.1\libs\armeabi-v7a\libcom.forge42.parseapi.so
+[DEBUG] installing native lib: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.ci.cocoafish\1.0\libs\armeabi\libcom.ci.cocoafish.so
+[DEBUG] installing native lib: D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\modules\android\com.ci.cocoafish\1.0\libs\armeabi-v7a\libcom.ci.cocoafish.so
+[DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 2 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.031000 seconds on emulator to get ready
+[INFO] Installing application on emulator
+[INFO] Launching application ... daysnapper
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=coop.tiny.daysnapper/.DaysnapperActivity }
+
+[INFO] Deployed daysnapper ... Application should be running.

@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Android Module
+author: Clearly Innovative
+license: Comming Soon
+copyright: 2011
+
+
+# these should not be edited
+name: cocoafishmoduleandroid
+moduleid: com.ci.cocoafish
+guid: 744d5c13-e63c-40f3-8b54-c4483336df57
+platform: android
+minsdk: 1.8.0.1
