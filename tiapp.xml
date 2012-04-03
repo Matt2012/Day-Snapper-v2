@@ -21,8 +21,8 @@
     <statusbar-style>default</statusbar-style>
     <statusbar-hidden>false</statusbar-hidden>
     <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
     <guid>00b09db2-65e1-4dda-b732-cc45e4e8fad2</guid>
     <iphone>
         <orientations device="iphone">

@@ -5,9 +5,8 @@ function ApplicationWindow() {
 		
 	//create object instance
 	var self = Ti.UI.createWindow({
-		title:'Products',
 		exitOnClose:true,
-		navBarHidden:false,
+		navBarHidden:true,
 		backgroundColor:'#ffffff'
 	});
 		
@@ -20,14 +19,14 @@ function ApplicationWindow() {
 	
 	//create detail view container
 	var detailContainerWindow = Ti.UI.createWindow({
-		title:'Product Details',
+		title:'Snap',
 		navBarHidden:false,
 		backgroundColor:'#ffffff'
 	});
 	detailContainerWindow.add(detailView);
     
 	//add behavior for master view
-	masterView.addEventListener('itemSelected', function(e) {
+	masterView.SnapView.addEventListener('itemSelected', function(e) {
 		detailView.fireEvent('itemSelected',e);
 		detailContainerWindow.open();
 	});
