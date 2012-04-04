@@ -1,9 +1,16 @@
 Logfile initialized
 [INFO] logfile = D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper\build.log
-[DEBUG] C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\builder.py simulator daysnapper D:\Program Files\Android\android-sdk D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper coop.tiny.daysnapper 19 HVGA
-[INFO] Building daysnapper for Android ... one moment
+[DEBUG] C:\Users\Matt\AppData\Roaming\Titanium\mobilesdk\win32\1.8.2\android\builder.py simulator Day Snapper D:\Program Files\Android\android-sdk D:\Users\Matt\Dropbox\Titanium Workspace\daysnapper coop.tiny.daysnapper 19 HVGA
+[INFO] Building Day Snapper for Android ... one moment
 [INFO] Titanium SDK version: 1.8.2 (02/23/12 17:46 59b3a90)
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
 [TRACE] adb devices returned 1 devices/emulators
 [TRACE] adb devices returned 1 devices/emulators

@@ -39,7 +39,7 @@ function MasterView() {
 				icon:'plus',
 				width:80
 			},
-			btnRefresh: {
+			btnSync: {
 				icon:'sync',
 				width:80
 			},
@@ -59,39 +59,46 @@ function MasterView() {
 	bottomBar.addEventListener('buttonPress', function(e) {
 
 		var btnAction = e.id;
-		if(btnAction == 'search')
+		if(btnAction == 'btnSearch')
 		{
+			alert('search coming soon..');
 			//hide drop down
 			
 			//show search (add view)
 			
+			
+		}
+		else if(btnAction == 'btnSync')
+		{
+			alert('sync coming soon..');
+			//check if network
+			
+			//---------------------------------------------start sync
+			
+			//start activity indicator
+			
+			//get latest update date from properties
+			
+			//download all changes from the date from cloud
+			
+			//show progress bar
+			
+			//grab all local changes from device
+			
+			//where same id in both list remove update with oldest date from that list
+			
+			//make local changes
+			
+			//make remote changes
+			
+			
 		}
 		else
 		{
-/*			var Window = require();
-			var w = new ui.Window({
-				navBarHidden:true,
-				
-				modal:true
-			});
-			w.open();*/
-			
-			
-			var dialog = Titanium.UI.createOptionDialog({
-    title: 'Hello',
-    options: ['Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2'],
-    cancel:1
-});
-dialog.show();
-	
-			
-/*			var PopUp = require('/ui/common/dialog/'+btnAction+'Window');
-			
-			var popupView = new PopUp();
-			
-			self.add(popupView);*/
-
-
+			var url = '/ui/common/'+btnAction+'Window';
+			var masterModal = require(url);
+			var w = masterModal();
+			w.open();
 		}
 		
 		

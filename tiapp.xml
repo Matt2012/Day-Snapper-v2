@@ -9,7 +9,7 @@
     </deployment-targets>
     <sdk-version>1.8.2</sdk-version>
     <id>coop.tiny.daysnapper</id>
-    <name>daysnapper</name>
+    <name>Day Snapper</name>
     <version>1.0</version>
     <publisher>Matt</publisher>
     <url>http://daysnapper.tiny.coop</url>

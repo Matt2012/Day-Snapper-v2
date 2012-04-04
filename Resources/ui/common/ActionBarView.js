@@ -2,10 +2,10 @@ function ActionBarView(args) {
 	
 	Ti.include('../../lib/ti/global.js');
 
-	if(typeof args.pos !== undefined && args.pos === 'top')
+	if(typeof args.pos !== 'undefined' && args.pos === 'top')
 	{
-		var labelColour = '#000000';
-		var barBorderTop = 42;
+		var labelColour = '#666';
+		var barBorderTop = 43;
 		
 		var self = new ui.Component(new ui.View({
 			height:44,
@@ -46,9 +46,38 @@ function ActionBarView(args) {
 		if(args.pos=='top')
 		{
 			//add drop down picker here
-		self.add(new ui.ImageView('../../images/appc_white.png', {
+			if(typeof args.type !== 'undefined' )
+			{
+				
+				Ti.API.info("--------------------------Top Options: " + args.type);
+				
+				if(args.type=='MasterView')
+				{
+					//defaults to drop down
+				}
+				else
+				{
+					var tr = Ti.UI.create2DMatrix();
+					tr = tr.rotate(353);
+					
+					windowLabel = new ui.Label(args.type, {
+					  color:labelColour,
+					  top:0,
+					  left:0,
+					  height:60,
+					  font:{fontSize:42},
+					  textAlign:'left',
+					  transform:tr
+					});
+					self.add(windowLabel);
+				}
+			}
+			else
+			{
+				self.add(new ui.ImageView('../../images/appc_white.png', {
 			left:5
 		}));
+			}
 		}
 	}
 	

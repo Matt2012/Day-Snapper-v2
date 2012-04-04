@@ -119,7 +119,6 @@ function LoginView() {
 			var user = result.user;
 			Ti.API.info( "Logged In as: " + user.objectForKey("username") ); // show the logged in user
 			Ti.App.Properties.setProperty('userID',parseapi.PFUserCurrentUser());
-			alert(Ti.App.Properties.getProperty('userID'));
 			self.fireEvent('loggedIn',user);
 		} else {
 			Ti.API.info("Could not login with credentials. ErrorCode: " + result.errorCode + " Error: " + result.error);
