@@ -13,7 +13,7 @@ function AuthenticationView() {
 	var loginV = new LoginView();
 	var registerV = new RegisterView();
 	var passwordV = new EmailPasswordView();
- 
+
     var scrollView = Ti.UI.createScrollableView({
 		top:44,
 		left:0,
@@ -25,7 +25,12 @@ function AuthenticationView() {
  
     self.add(scrollView);
 	
-	
+	loginV.addEventListener('loggedIn', function(user) {
+		//alert('user logged in'  + user.objectForKey("username"));
+		//self.remove(scrollView);
+		self.fireEvent('authenticated',user)
+		return false;
+	});
 	
 	scrollView.addEventListener('scroll', function(e) {
 		//alert('change buttons'+e.index);

@@ -37,13 +37,12 @@ function ActionBarView(args) {
 	}
 	
 	var buttonOffset = 0;
-	
 	for (var buttonId in args.buttons) {
 		var buttonData = args.buttons[buttonId];
 		
 		var btnLabel, btnImage, button = new ui.View({
 			width:buttonData.width,
-			right:buttonOffset
+			right:buttonOffset,
 		});
 		
 		if (buttonData.title) {

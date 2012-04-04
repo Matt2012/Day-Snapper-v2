@@ -1,9 +1,16 @@
 
 function AuthenticationWindow()
 {
-	var AuthenticationView = require('ui/common/AuthenticationView');
+	var AuthenticationView = require('ui/common/AuthenticationWindow');
 	//construct UI
 	var authenticationView = new AuthenticationView();
+	
+	//listen for login or register or pin getting userID
+	authenticationView.addEventListener('authenticated', function(e) {
+		alert('10');
+		//authenticationView.remove(scrollview);
+	});
+	
 	return authenticationView;
 }
 
@@ -59,26 +66,54 @@ function ApplicationWindow() {
 		backgroundColor:'#ffffff'
 	});
 	
+/*	self.addEventListener('dox', function(user) {
+		alert('user is logged in '+  user.objectForKey("username"));
+		//this.remove(scrollDay); 
+	});*/
 	
-	if(Ti.App.Properties.hasProperty('userID')==null)
+	
+
+	
+/*	Titanium.API.addEventListener('myEvent', function(e)
+	{
+		Titanium.API.info('my event fired!');
+		alert('Custom data sent with the event: ');
+	});*/
+	
+	
+	if(!Ti.App.Properties.hasProperty('userID'))
 	{
 		//No UserID stored so show login screen (with register and forgot password options)
 		Ti.API.info('------------------------Loading Authentication Window');
-		var firstView = AuthenticationWindow();
+		var AuthenticationView = require('/ui/common/AuthenticationWindow');
+		var firstV = new AuthenticationView();
+		
+		firstV.addEventListener('authenticated', function(user) {
+			alert('user logged in '  + user.objectForKey("username"));
+			self.remove(firstV);
+			var mainV = MasterDetailWindow();
+			self.add(mainV);
+			return false;
+		});
+		
 	}
-	else if(Ti.App.Properties.hasProperty('usePin')!=null && Ti.App.Properties.getProperty('usePin'))
+	else if(Ti.App.Properties.hasProperty('usePin') && Ti.App.Properties.getProperty('usePin'))
 	{
 		//If using pin option and logged in show pin window
-		var firstView = PinWindow();
+		Ti.API.info('------------------------Open Pin Window');
+		var firstV = PinWindow();
 	}
 	else
 	{
 		//Main snaps window
-		Ti.API.info('------------------------Loading Master Detail Window');
-		var firstView = MasterDetailWindow();
+		Ti.API.info('------------------------Loading Master Detail View in Main Window');
+		var firstV = MasterDetailWindow();
 	}
-	self.add(firstView);
 	
+		 
+	self.add(firstV);
+	
+			
 	return self;
 };
 
