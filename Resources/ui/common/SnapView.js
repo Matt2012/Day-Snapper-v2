@@ -7,7 +7,7 @@ function SnapView() {
 		
 	
 	var self = Ti.UI.createView({
-		backgroundColor:'#F1F1F1',
+		backgroundColor:'#FFFFFF',
 		top:44,
 		height:375
 	});
@@ -44,7 +44,8 @@ function SnapView() {
 		
 	var table = Ti.UI.createTableView({
 		data:y,
-		height:375
+		height:375,
+		color:'#999'
 	});
 	self.add(table);
 	

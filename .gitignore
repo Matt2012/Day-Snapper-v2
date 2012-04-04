@@ -1,3 +1,5 @@
 tmp
 build/
 .fastdev.lock
+Resources/lib/ti/global.js
+archive

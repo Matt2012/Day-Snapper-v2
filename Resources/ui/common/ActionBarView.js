@@ -1,29 +1,41 @@
-
-var _ = require('../../lib/thirdParty/underscore'),
-theme = require('../../lib/ti/theme'),
-ui = require('../../lib/ti/components');	
-
 function ActionBarView(args) {
 	
+	Ti.include('../../lib/ti/global.js');
+
 	if(typeof args.pos !== undefined && args.pos === 'top')
 	{
+		var labelColour = '#000000';
+		var barBorderTop = 42;
+		
 		var self = new ui.Component(new ui.View({
 			height:44,
-			top:0,
-			backgroundImage:'/images/sliver.png'
+			backgroundColor:'#F1F1F1',
+			top:0
 		}));
 	}
 	else
 	{
+		args.pos = 'bottom';
+		var labelColour = '#000000';
+		var barBorderTop = 0;
+		
 		var self = new ui.Component(new ui.View({
 			height:44,
-			bottom:0,
-			backgroundImage:'/images/sliver.png'
+			backgroundColor:'#F1F1F1',
+			bottom:0
 		}));
+		
 	}
+
+	var barBorder = Ti.UI.createView({
+        height: 1,
+        width: '100%',
+        backgroundColor: '#ccc',
+        top:barBorderTop
+    });
+    self.add(barBorder);
 	
 
-	
 	//title label or image if none provided
 	if (args.title) {
 		self.add(new ui.Label(args.title, _.extend({
@@ -31,9 +43,13 @@ function ActionBarView(args) {
 		},theme.headerText)));
 	}
 	else {
-		self.add(new ui.ImageView('/images/appc_white.png', {
+		if(args.pos=='top')
+		{
+			//add drop down picker here
+		self.add(new ui.ImageView('../../images/appc_white.png', {
 			left:5
 		}));
+		}
 	}
 	
 	var buttonOffset = 0;
@@ -47,7 +63,7 @@ function ActionBarView(args) {
 		
 		if (buttonData.title) {
 			btnLabel = new ui.Label(buttonData.title, {
-				color:'#fff',
+				color:labelColour,
 				height:'auto',
 				width:'auto',
 				font: {
@@ -58,7 +74,7 @@ function ActionBarView(args) {
 			button.add(btnLabel);
 		}
 		else if (buttonData.icon) {
-			var btnImage = new ui.ImageView(buttonData.icon,{
+			var btnImage = new ui.ImageView(iconPath(buttonData.icon,args.pos),{
 				height:20,
 				width:20
 			});
@@ -66,12 +82,16 @@ function ActionBarView(args) {
 		}
 		
 		self.add(button);
-		self.add(new ui.View({
-			backgroundColor:'#dedede',
-			width:1,
-			height:42,
-			right:buttonOffset+buttonData.width
-		}));
+		
+		if(args.pos=='top')
+		{
+			self.add(new ui.View({
+				backgroundColor:'#dedede',
+				width:1,
+				height:42,
+				right:buttonOffset+buttonData.width
+			}));
+		}
 		
 		(function(id, btn) {
 			btn.addEventListener('click', function() {

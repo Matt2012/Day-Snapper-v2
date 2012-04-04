@@ -1,19 +1,13 @@
 function MasterView() {
 	
-	var _ = require('../../lib/thirdParty/underscore'),
-	theme = require('../../lib/ti/theme'),
-	ui = require('../../lib/ti/components'),
-	ActionBarView = require('../../ui/common/ActionBarView'),
-	SnapView = require('../../ui/common/SnapView');
-	
-/*	var self = Ti.UI.createView({
-		backgroundColor:'white'
-	});*/
+	Ti.include('../../lib/ti/global.js');
+	var ActionBarView = require('../../ui/common/ActionBarView');
 	
 	var self = new ui.View({
 		backgroundColor:'white'
 	});
 	
+	var SnapView = require('../../ui/common/SnapView');
 	
 	var snapsTable = new SnapView();
 	
@@ -24,12 +18,8 @@ function MasterView() {
 	var topBar = new ActionBarView({
 		pos: 'top',
 		buttons: {
-			snap: {
-				title:'Snap',
-				width:80
-			},
 			settings: {
-				icon:'../../images/14-gear@2x.png',
+				icon:'gear',
 				width:40
 			}
 		}
@@ -38,21 +28,28 @@ function MasterView() {
 	self.add(topBar.viewProxy);
 	
 	topBar.addEventListener('buttonPress', function(e) {
-		var Window = (e.id === 'snap') ? require('/ui/SnapWindow') : require('/ui/SettingsWindow');
-		var w = new Window();
-		w.open();
+		alert(e.id);
+		//open settings window
 	});
 	
 	var bottomBar = new ActionBarView({
 		pos: 'bottom',
 		buttons: {
-			snap: {
-				title:'Search',
+			btnAdd: {
+				icon:'plus',
 				width:80
 			},
-			settings: {
-				icon:'../../images/14-gear@2x.png',
-				width:40
+			btnRefresh: {
+				icon:'sync',
+				width:80
+			},
+			btnTags: {
+				icon:'tag',
+				width:80
+			},
+			btnSearch: {
+				icon:'search',
+				width:80
 			}
 		}
 	});
@@ -60,9 +57,45 @@ function MasterView() {
 	self.add(bottomBar.viewProxy);
 	
 	bottomBar.addEventListener('buttonPress', function(e) {
-		var Window = (e.id === 'snap') ? require('/ui/SnapWindow') : require('/ui/SettingsWindow');
-		var w = new Window();
-		w.open();
+
+		var btnAction = e.id;
+		if(btnAction == 'search')
+		{
+			//hide drop down
+			
+			//show search (add view)
+			
+		}
+		else
+		{
+/*			var Window = require();
+			var w = new ui.Window({
+				navBarHidden:true,
+				
+				modal:true
+			});
+			w.open();*/
+			
+			
+			var dialog = Titanium.UI.createOptionDialog({
+    title: 'Hello',
+    options: ['Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2','Option 1','Option 2'],
+    cancel:1
+});
+dialog.show();
+	
+			
+/*			var PopUp = require('/ui/common/dialog/'+btnAction+'Window');
+			
+			var popupView = new PopUp();
+			
+			self.add(popupView);*/
+
+
+		}
+		
+		
+
 	});
 	
 	return self;

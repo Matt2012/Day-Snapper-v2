@@ -1,15 +1,8 @@
-
 function AuthenticationWindow()
 {
 	var AuthenticationView = require('ui/common/AuthenticationWindow');
 	//construct UI
 	var authenticationView = new AuthenticationView();
-	
-	//listen for login or register or pin getting userID
-	authenticationView.addEventListener('authenticated', function(e) {
-		alert('10');
-		//authenticationView.remove(scrollview);
-	});
 	
 	return authenticationView;
 }
@@ -22,8 +15,7 @@ function PinWindow()
 	return pinView;
 }
 
-
-function MasterDetailWindow()
+function MasterDetailView()
 {
 	//declare module dependencies
 	var MasterView = require('ui/common/MasterView'),
@@ -32,9 +24,6 @@ function MasterDetailWindow()
 	//construct UI
 	var masterView = new MasterView(),
 		detailView = new DetailView();
-		
-	//create master view container
-	//self.add(masterView);
 	
 	//create detail view container
 	var detailContainerWindow = Ti.UI.createWindow({
@@ -54,10 +43,9 @@ function MasterDetailWindow()
 }
 
 
-
-
 function ApplicationWindow() {
 	
+	Ti.include('../../../lib/ti/global.js');
 
 	//create object instance
 	var self = Ti.UI.createWindow({
@@ -66,32 +54,17 @@ function ApplicationWindow() {
 		backgroundColor:'#ffffff'
 	});
 	
-/*	self.addEventListener('dox', function(user) {
-		alert('user is logged in '+  user.objectForKey("username"));
-		//this.remove(scrollDay); 
-	});*/
-	
-	
-
-	
-/*	Titanium.API.addEventListener('myEvent', function(e)
-	{
-		Titanium.API.info('my event fired!');
-		alert('Custom data sent with the event: ');
-	});*/
-	
-	
-	if(!Ti.App.Properties.hasProperty('userID'))
+	Ti.API.info('------------------------is logged in' + parseapi.PFUserCurrentUser());
+	if(parseapi.PFUserCurrentUser() == null)
 	{
 		//No UserID stored so show login screen (with register and forgot password options)
-		Ti.API.info('------------------------Loading Authentication Window');
-		var AuthenticationView = require('/ui/common/AuthenticationWindow');
+		Ti.API.info('------------------------Loading Authentication View');
+		var AuthenticationView = require('/ui/common/AuthenticationView');
 		var firstV = new AuthenticationView();
 		
 		firstV.addEventListener('authenticated', function(user) {
-			alert('user logged in '  + user.objectForKey("username"));
 			self.remove(firstV);
-			var mainV = MasterDetailWindow();
+			var mainV = MasterDetailView();
 			self.add(mainV);
 			return false;
 		});
@@ -107,7 +80,7 @@ function ApplicationWindow() {
 	{
 		//Main snaps window
 		Ti.API.info('------------------------Loading Master Detail View in Main Window');
-		var firstV = MasterDetailWindow();
+		var firstV = MasterDetailView();
 	}
 	
 		 

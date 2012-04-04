@@ -1,7 +1,9 @@
 function AuthenticationView() {
 	
-    Ti.include('../../lib/ti/global.js');
-	
+	Ti.include('../../lib/ti/global.js');
+
+	var ActionBarView = require('/ui/common/ActionBarView');
+		
 	var self = new ui.View({
 		backgroundColor:'white'
 	});
@@ -13,7 +15,7 @@ function AuthenticationView() {
 	var loginV = new LoginView();
 	var registerV = new RegisterView();
 	var passwordV = new EmailPasswordView();
- 
+
     var scrollView = Ti.UI.createScrollableView({
 		top:44,
 		left:0,
@@ -25,7 +27,10 @@ function AuthenticationView() {
  
     self.add(scrollView);
 	
-	
+	loginV.addEventListener('loggedIn', function(user) {
+		self.fireEvent('authenticated',user)
+		return false;
+	});
 	
 	scrollView.addEventListener('scroll', function(e) {
 		//alert('change buttons'+e.index);
@@ -80,8 +85,8 @@ function AuthenticationView() {
 		pos: 'bottom',
 		buttons: {
 			password: {
-				title:'Reminder',
-				width:120
+				title:'Password Reminder',
+				width:180
 			}
 		}
 	});
