@@ -1,10 +1,8 @@
-
-
-function doAction(which, btnAction)
+function doAction(which, btnAction, self)
 {
 	if(which=='Snap')
 	{
-		SnapAction(btnAction);
+		SnapAction(btnAction, self);
 	}
 	else if(which=='TagOpts')
 	{
@@ -15,7 +13,6 @@ function doAction(which, btnAction)
 		//which == tag
 		Tag(btnAction);
 	}
-
 }
 
 function TagOpts(btnAction)
@@ -28,22 +25,29 @@ function Tag(btnAction)
 	alert("Tag Sort: " + btnAction + ", coming soon.");
 }
 
-function SnapAction(btnAction)
+function SnapAction(btnAction, self)
 {
+	//alert(btnAction);
 	switch(btnAction)
 	{
 		case'btnNote':
-			openOther();
+			openSnapWindow(btnAction, self)
 		break;
 		case'btnCamera':
 			openCamera();
-		break
+		break;
 		case'btnGallery':
 			openOther();
-		break
-		case'btnNote':
+		break;
+		case'btnVideo':
 			openOther();
-		break
+		break;
+		case'btnVideo':
+			openOther();
+		break;
+		case'btnBlog':
+			openOther();
+		break;
 		default:
 			openOther();
 		break;
@@ -68,4 +72,18 @@ function openOther() {
 function openNote() {
 	
 		alert('This Note Coming Soon');
+}
+
+function openSnapWindow(btnAction, self)
+{
+	var url = '/ui/common/doSnapSection/'+btnAction+'Snap';
+	var masterModal = require(url);
+	var w = masterModal();
+		
+	w.addEventListener('saveSnapAndRefresh_step1', function(newSnap) {
+		self.fireEvent('saveSnapAndRefresh_step2',newSnap);
+		self.close();
+	});
+	
+	w.open();
 }

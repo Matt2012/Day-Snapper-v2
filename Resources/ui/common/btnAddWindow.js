@@ -19,26 +19,16 @@ function btnAddWindow() {
 	self.add(SSSTableView);
 	
 	self.SnapView.addEventListener('itemSelected', function(e) {
-		doAction('Snap', e.id);
+		doAction('Snap', e.id, self);
 	});
 	
 	var topBar = new ActionBarView({
 		type:'Pick a Snap',
-		pos: 'top',
-		buttons: {
-			settings: {
-				icon:'gear',
-				width:40
-			}
-		}
+		pos: 'top'
 	});
 
 	self.add(topBar.viewProxy);
 	
-	topBar.addEventListener('buttonPress', function(e) {
-		alert(e.id);
-		//open settings window
-	});
 	
 	var bottomBar = new ActionBarView({
 		pos: 'bottom',
@@ -47,15 +37,15 @@ function btnAddWindow() {
 				icon:'note',
 				width:80
 			},
-			btnRefresh: {
+			btnCamera: {
 				icon:'camera',
 				width:80
 			},
-			btnTags: {
+			btnVoice: {
 				icon:'voice',
 				width:80
 			},
-			btnSearch: {
+			btnVideo: {
 				icon:'video',
 				width:80
 			}
@@ -65,7 +55,12 @@ function btnAddWindow() {
 	self.add(bottomBar.viewProxy);
 	
 	bottomBar.addEventListener('buttonPress', function(e) {
-		doAction('Snap',e.id);
+		doAction('Snap',e.id, self);
+	});
+	
+	self.addEventListener('saveSnapAndRefresh_step2', function(newSnap) {
+		self.fireEvent('saveSnapAndRefresh_step3',newSnap);
+		//return false;
 	});
 
 	return self;

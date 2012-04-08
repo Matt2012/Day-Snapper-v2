@@ -1,25 +1,38 @@
 function SnapSelectorScrollableTableView() {
 	
+	Ti.include('../../lib/ti/global.js');
+	
 	var self = Ti.UI.createView({
 		backgroundColor:'#FFFFFF',
-		top:44,
-		height:375
+		top:44
 	});
 
-	var ar = [{"title":"Quick Note", "id":"btNote"},
-		{"title":"Photo Snap", "id":"btn"},
-		{"title":"Voice Snap", "id":"btn"},
-		{"title":"Video Snap", "id":"btn"},
-		{"title":"Snap from Gallery", "id":"btn"},
-		{"title":"Public Blog Snap", "id":"btn"},
-		{"title":"Private Diary Snap", "id":"btn"},
-		{"title":"Make a DooBee Snap", "id":"btn"},
-		{"title":"Quick Location Snap", "id":"btn"}
+	//save this to Taffy on first run // check for updates from server
+	var noteIcon = iconPath('note','bottom');
+	var photoIcon = iconPath('camera','bottom');
+	var voiceIcon = iconPath('voice','bottom');
+	var videoIcon = iconPath('video','bottom');
+	var galleryIcon = iconPath('note','bottom');
+	var blogIcon = iconPath('note','bottom');
+	var journalIcon = iconPath('note','bottom');
+	var doobeeIcon = iconPath('note','bottom');
+	var locationIcon = iconPath('note','bottom');
+	var reminderIcon = iconPath('note','bottom');
+	
+	var ar = [{"title":"Quick Note", "id":"btnNote", "rightImage":noteIcon},
+		{"title":"Photo Snap", "id":"btnPhoto", "rightImage":photoIcon},
+		{"title":"Voice Snap", "id":"btnVoice", "rightImage":voiceIcon},
+		{"title":"Video Snap", "id":"btnVideo", "rightImage":videoIcon},
+		{"title":"Snap from Gallery", "id":"btnGallery", "rightImage":galleryIcon},
+		{"title":"Public Blog Snap", "id":"btnBlog", "rightImage":blogIcon},
+		{"title":"Private Journal Snap", "id":"btnJournal", "rightImage":journalIcon},
+		{"title":"Make a DooBee Snap", "id":"btnDooBee", "rightImage":doobeeIcon},
+		{"title":"Quick Location Snap", "id":"btnLocation", "rightImage":locationIcon},
+		{"title":"Quick Reminder Snap", "id":"btnAlarm", "rightImage":reminderIcon}
 		];
 		
 	var table = Ti.UI.createTableView({
 		data:ar,
-		height:375,
 		color:'#999'
 	});
 	self.add(table);

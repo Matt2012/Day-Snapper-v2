@@ -1,8 +1,8 @@
-#appname: daysnapper
-#publisher: Matt
-#url: http://daysnapper.tiny.coop
-#image: appicon.png
-#appid: coop.tiny.daysnapper
-#desc: undefined
-#type: mobile
-#guid: 00b09db2-65e1-4dda-b732-cc45e4e8fad2
+#appname:daysnapper
+#publisher:TinyCoop
+#url:http://daysnapper.tiny.coop
+#image:appicon.png
+#appid:coop.tiny.daysnapper
+#desc:Utility for keeping track of your day. Private Journal. Photo Snapper. Blog Poster..
+#type:mobile
+#guid:00b09db2-65e1-4dda-b732-cc45e4e8fad2

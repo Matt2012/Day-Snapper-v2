@@ -7,7 +7,7 @@ function MasterView() {
 		backgroundColor:'white'
 	});
 	
-	var SnapView = require('../../ui/common/SnapView');
+	var SnapView = require('../../ui/common/viewSnapsSection/SnapsScrollableTableView');
 	
 	var snapsTable = new SnapView();
 	
@@ -18,7 +18,7 @@ function MasterView() {
 	var topBar = new ActionBarView({
 		pos: 'top',
 		buttons: {
-			settings: {
+			btnSettings: {
 				icon:'gear',
 				width:40
 			}
@@ -28,8 +28,18 @@ function MasterView() {
 	self.add(topBar.viewProxy);
 	
 	topBar.addEventListener('buttonPress', function(e) {
-		alert(e.id);
+		var btnAction = e.id;
 		//open settings window
+		var url = '/ui/common/'+btnAction+'Window';
+		var masterModal = require(url);
+		var w = new masterModal();
+		
+		w.addEventListener('loggedOut', function(user) {
+			self.fireEvent('unauthenticated',user)
+			return false;
+		});
+			
+		w.open();
 	});
 	
 	var bottomBar = new ActionBarView({
@@ -98,6 +108,9 @@ function MasterView() {
 			var url = '/ui/common/'+btnAction+'Window';
 			var masterModal = require(url);
 			var w = masterModal();
+			w.addEventListener('saveSnapAndRefresh_step3', function(newSnap) {
+				snapsTable.fireEvent('saveSnapAndRefresh_step4',newSnap);
+			});
 			w.open();
 		}
 		
